@@ -56,9 +56,7 @@ import os
 from dotenv import load_dotenv
 
 # %% define variables and keys
-#OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-#print(OPENAI_API_KEY)
-OPENAI_API_KEY ="eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjI0ZjIwMDQ5MjJAZHMuc3R1ZHkuaWl0bS5hYy5pbiJ9.CfwJHvL6a0adtb7_Xu9in2i4Kg7BLXJTP6h3Qr_96D4"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 text="Aaxd qaRyNyIZiT OeE ShJ7 4D  hNiMz  02Bvti 9TvqfYe"
 url="https://aiproxy.sanand.workers.dev/openai/v1/chat/completions"
 headers={
