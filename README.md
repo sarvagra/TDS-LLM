@@ -1,24 +1,40 @@
-# **LARGE LEARNING MODELS**
+# 🧠 LLM-Powered Semantic & Vision Toolkit
 
-## 🎬 LLM Sentiment Analysis: Movie Review Sentiment Classifier
+This repository is a modular suite of tools combining **semantic search**, **image processing**, **text extraction**, **image-encoding**, and **sentiment analysis** using modern machine learning techniques.
 
-This project uses OpenAI's `gpt-4o-mini` model to classify movie reviews as **positive** or **negative** using sentiment analysis.
+---
+## ✨ Features
+- 🧠 **Sentiment Analysis**: Classify the sentiment of text-based questions and answers.<br><br>
+- 🔍 **Semantic Search API**: Search over documents using sentence embeddings and cosine similarity.<br><br>
 
-### 📄 Description
+- 🖼️ **Image to Text Extraction(Vision)**: Extract structured text like invoices or statements from image files.<br><br>
 
-- Read movie reviews from a CSV file.
-- Send each review to OpenAI API with a prompt to determine sentiment.
-- Append predicted sentiments to the dataset.
-- Compare predicted vs. actual sentiments to calculate accuracy.
+- 🧬 **Base64 Encoding/Decoding**: Encode or decode files/images for transmission or storage.<br><br>
 
-### 🛠️ Requirements
+- 📍 **Address Parser.py** : Extracts structured geographical info (state name/code, ZIP code, and country name/code) from real-world addresses using the OpenAI API with both basic and JSON schema-based approaches, and outputs results as a DataFrame.<br><br>
+- 🧪 **API Playground**: Test endpoints directly via the built-in Swagger UI.
+---
 
-- Python 3.9+
-- pandas
-- requests
-
-Install dependencies:
+## 📂 Project Structure
 
 ```bash
-pip install pandas requests
+.
+├── base64/                  # Utilities for encoding/decoding
+├── resources/               # Data files (.env, images, CSVs)
+├── semantic_search_api/     # FastAPI semantic search project
+├── sentiment analysis/      # Sentiment classification using sample movie reviews
+├── text extraction/         # OCR and text parsing tools
+├── vision/                  # Image analysis and invoice parsing
+├── .gitignore
+├── README.md                # Description(you're here!!)
+
+```
+---
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/llm-semantic-vision-toolkit.git
+cd llm-semantic-vision-toolkit
 ```
